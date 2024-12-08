@@ -1,0 +1,84 @@
+body {
+  font-family: "Roboto";
+}
+
+.menu-main-container {
+  box-sizing: border-box;
+  // width: 20%;
+  border-right: 2px solid #edecef;
+  padding: 48px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+  .name-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px;
+
+    .film-camera-icon {
+      color: #5a81fa;
+      font-size: 20px;
+    }
+
+    h2 {
+      font-weight: 600;
+
+      font-size: 24px;
+      color: #334456;
+    }
+
+    h2 span {
+      color: #5a81fa;
+      font-size: 32px;
+    }
+  }
+
+  .menu-container,
+  .general-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h2 {
+      text-transform: uppercase;
+      color: #e2e1e6;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+  }
+
+  .menu-options-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    cursor: pointer;
+
+    .icon {
+      color: #a2a2bf;
+      font-size: 20px;
+    }
+
+    a {
+      font-size: 18px;
+      color: #a2a2bf;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:focus {
+        color: #2f2e3f;
+
+        .icon {
+          color: #5a81fa;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 18px;
+    color: #a2a2bf;
+    line-height: 24px;
+  }
+}

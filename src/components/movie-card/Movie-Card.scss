@@ -1,0 +1,35 @@
+.movie-card-container {
+  border: 1px solid #a2a2bf;
+  border-radius: 16px;
+  height: 500px;
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .movie-details {
+    display: flex;
+    gap: 10px;
+    padding: 8px;
+    flex-direction: column;
+  }
+
+  .movie-description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 11;
+    text-overflow: ellipsis;
+    height: calc(1rem * 11);
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .movie-poster img {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+  }
+}

@@ -1,0 +1,67 @@
+.movie-details {
+  height: 100%;
+  display: flex;
+}
+
+.movie-details-container {
+  background-color: #fafbff;
+  padding: 72px;
+  width: 100%;
+  scrollbar-width: thin;
+  overflow-y: auto;
+  // overflow-x: hidden;
+  // height: 100vh;
+
+  .left-container {
+    padding: 32px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    .cast {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+
+      img {
+        height: 200px;
+        border-radius: 8px;
+      }
+
+      .actor-name {
+        font-weight: 600;
+      }
+
+      .character-name {
+        color: #313130;
+        font-size: 14px;
+      }
+    }
+
+    .cast-container {
+      padding-top: 72px;
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+    }
+  }
+
+  .right-container {
+    img {
+      height: 400px;
+      right: 0;
+      top: 0;
+      position: fixed;
+    }
+
+    p span {
+      text-transform: uppercase;
+    }
+  }
+
+  .title {
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+}
